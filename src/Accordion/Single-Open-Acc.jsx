@@ -1,16 +1,15 @@
 import { useState } from "react";
-import Data from "./assets/data";
-import "./App.css";
+import Data from "./data";
+import "../App.css";
 
 function AccordionSingleOpen() {
   const [active, setActive] = useState(null);
 
+  {
+    /* first main logic */
+  }
   const handleClick = (index) => {
-    if (active === index) {
-      setActive(null);
-    } else {
-      setActive(index);
-    }
+    setActive(active === index ? null : index);
   };
 
   return (
@@ -33,10 +32,12 @@ function AccordionSingleOpen() {
                 }}
               >
                 <span>{que}</span>
+                {/* second main logic */}
                 <button onClick={() => handleClick(index)}>
                   {active === index ? "-" : "+"}
                 </button>
               </div>
+              {/* third main logic */}
               {active === index && <div className="ans">{ans}</div>}
             </>
           );

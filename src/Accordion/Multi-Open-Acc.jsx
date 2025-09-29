@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Data from "./assets/data";
-import "./App.css";
+import Data from "./data"
+import "../App.css";
 
 function AccordionMultiOpen() {
   const [active, setActive] = useState([]);
