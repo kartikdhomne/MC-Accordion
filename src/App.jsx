@@ -4,12 +4,13 @@
 // import Calculator from "./Calculator/Calculator";
 // import Timer from "./Countdown-Stopwatch/Timer";
 // import TimerTest from "./Countdown-Stopwatch/TimerTest";
-import Modal from "./Modal/SimpleModal";
+// import Modal from "./Modal/SimpleModal";
+import Dashboard from "./Reusable-Modal/Dashboard";
 
 function App() {
   return (
     <>
-      <Modal />
+      <Dashboard />
     </>
   );
 }

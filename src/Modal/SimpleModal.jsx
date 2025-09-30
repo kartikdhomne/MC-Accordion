@@ -9,7 +9,7 @@ const Modal = () => {
   const handleClose = () => {
     setOpen(false);
   };
-  
+
   return (
     <div>
       <button
@@ -19,8 +19,8 @@ const Modal = () => {
         Open Modal
       </button>
       {open && (
-        <div className="fixed left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2">
-          <div className="border-1 border-red-600 p-10">
+        <div className="fixed  bg-black left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2">
+          <div className="border-1 border-red-600 p-10 bg-white">
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Quibusdam ad autem sed quis doloremque perspiciatis nemo optio
