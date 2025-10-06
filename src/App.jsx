@@ -6,11 +6,13 @@
 // import TimerTest from "./Countdown-Stopwatch/TimerTest";
 // import Modal from "./Modal/SimpleModal";
 import Dashboard from "./Reusable-Modal/Dashboard";
+import CheckboxTree from "./Nested-Checkboxes/checkbox";
 
 function App() {
   return (
     <>
       <Dashboard />
+      <CheckboxTree />
     </>
   );
 }
