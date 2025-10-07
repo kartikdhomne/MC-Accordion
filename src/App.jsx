@@ -5,14 +5,13 @@
 // import Timer from "./Countdown-Stopwatch/Timer";
 // import TimerTest from "./Countdown-Stopwatch/TimerTest";
 // import Modal from "./Modal/SimpleModal";
-import Dashboard from "./Reusable-Modal/Dashboard";
-import CheckboxTree from "./Nested-Checkboxes/checkbox";
+import InfiniteScroll from "./Infinite-Scroll/infinite-scroll";
+import SimpleInfiniteScroll from "./Infinite-Scroll/infinite-scroll";
 
 function App() {
   return (
     <>
-      <Dashboard />
-      <CheckboxTree />
+      <InfiniteScroll />
     </>
   );
 }
