@@ -7,11 +7,12 @@
 // import Modal from "./Modal/SimpleModal";
 import InfiniteScroll from "./Infinite-Scroll/infinite-scroll";
 import SimpleInfiniteScroll from "./Infinite-Scroll/infinite-scroll";
+import ParentTab from "./Tab-Component/Tab";
 
 function App() {
   return (
     <>
-      <InfiniteScroll />
+      <ParentTab />
     </>
   );
 }
