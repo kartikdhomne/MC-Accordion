@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const ProgressBar = ({ progress }) => {
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setValue(progress);
+    }, 500);
+
+    () => clearTimeout(timeout);
+  }, [progress]);
+
   return (
     <div style={{ display: "grid", gap: "12px", justifyContent: "center" }}>
       <div
@@ -9,18 +19,17 @@ const ProgressBar = ({ progress }) => {
           width: "500px",
           borderRadius: "50px",
           overflow: "hidden",
-          padding: "1px",
           margin: "4px 0",
         }}
       >
         <div
           style={{
             backgroundColor: "green",
-            color: "white",
+            color: `${value >= 5 ? "white" : "black"}`,
             textAlign: "center",
             borderRadius: "50px",
-            width: `${progress}%`,
-            transform: translateX(-25%)
+            width: `${value}%`,
+            transition: "1s ease-in",
           }}
         >
           {progress}%
@@ -31,7 +40,7 @@ const ProgressBar = ({ progress }) => {
 };
 
 const AnimatedProgressBar = () => {
-  const values = [0, 5, 10, 30, 75, 100];
+  const values = [2, 5, 10, 30, 75, 100];
   return (
     <div style={{ marginTop: "50px" }}>
       {values.map((value, index) => {
