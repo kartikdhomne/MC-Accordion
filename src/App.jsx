@@ -10,11 +10,13 @@ import InfiniteScroll from "./Infinite-Scroll/infinite-scroll";
 import SimpleInfiniteScroll from "./Infinite-Scroll/infinite-scroll";
 import ParentTab from "./Tab-Component/Tab";
 import AnimatedProgressBar from "./Animated-Progress-bar/progress-bar";
+import OtpVerify from "./OtpVerify/otp-verify";
 
 function App() {
   return (
     <>
       <AnimatedProgressBar />
+      <OtpVerify />
     </>
   );
 }
